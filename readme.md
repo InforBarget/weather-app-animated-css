@@ -62,3 +62,196 @@
 
 1. **Cloner le repository**
 ```bash
+git clone https://github.com/votre-username/weather-app-animated-css.git
+cd weather-app-animated-css
+```
+
+2. **Obtenir une clé API**
+   - Créez un compte sur [OpenWeatherMap](https://openweathermap.org/)
+   - Générez votre clé API gratuite
+   - Copiez votre clé
+
+3. **Configuration**
+   - Ouvrez `script.js`
+   - Remplacez `'VOTRE_CLE_API'` par votre vraie clé API :
+```javascript
+   const API_KEY = 'votre_cle_api_ici';
+```
+
+4. **Lancer l'application**
+   - Ouvrez `index.html` dans votre navigateur
+   - Ou utilisez un serveur local :
+```bash
+   # Avec Python
+   python -m http.server 8000
+   
+   # Avec Node.js
+   npx serve
+   
+   # Avec VS Code
+   # Extension "Live Server"
+```
+
+## 📂 Structure du Projet
+```
+weather-app-animated-css/
+│
+├── index.html          # Structure HTML
+├── styles.css          # Styles et animations CSS
+├── script.js           # Logique JavaScript
+├── README.md           # Documentation
+├── LICENSE             # Licence MIT
+│
+├── screenshots/        # Captures d'écran
+│   ├── preview.gif
+│   ├── sunny.png
+│   ├── rainy.png
+│   ├── snowy.png
+│   └── night.png
+│
+└── docs/              # Documentation supplémentaire
+    └── API_GUIDE.md
+```
+
+## 🎨 Fonctionnalités CSS
+
+### Animations Implémentées
+
+- **Pluie** : Particules animées avec chute réaliste
+- **Neige** : Flocons avec mouvement de balancement
+- **Nuages** : Animation de défilement fluide
+- **Étoiles** : Scintillement nocturne
+- **Glassmorphism** : Arrière-plans flous et translucides
+- **Transitions** : Changements de thème smooth
+
+### Thèmes Disponibles
+
+- ☀️ Ensoleillé (gradient bleu clair)
+- 🌧️ Pluvieux (gradient bleu foncé)
+- ❄️ Neigeux (gradient gris clair)
+- ☁️ Nuageux (gradient gris)
+- 🌙 Nocturne (gradient bleu marine)
+- ⛈️ Orageux (gradient gris sombre)
+
+## 🔧 Personnalisation
+
+### Modifier les Couleurs
+
+Dans `styles.css`, ajustez les variables CSS :
+```css
+:root {
+    --primary-color: #4FACFE;
+    --secondary-color: #00F2FE;
+    /* ... autres variables */
+}
+```
+
+### Ajouter des Animations
+
+Créez vos propres `@keyframes` dans `styles.css` :
+```css
+@keyframes monAnimation {
+    0% { /* état initial */ }
+    100% { /* état final */ }
+}
+```
+
+### Changer la Ville par Défaut
+
+Dans `script.js`, modifiez la ligne :
+```javascript
+getWeatherByCity('Paris'); // Remplacez par votre ville
+```
+
+## 🌐 API OpenWeatherMap
+
+### Endpoints Utilisés
+
+- **Current Weather** : `/weather`
+- **5 Day Forecast** : `/forecast`
+
+### Limites (Plan Gratuit)
+
+- 60 appels/minute
+- 1 000 000 appels/mois
+- Données mises à jour toutes les 10 minutes
+
+### Documentation
+
+📚 [Documentation officielle OpenWeatherMap](https://openweathermap.org/api)
+
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! 
+
+1. Forkez le projet
+2. Créez une branche (`git checkout -b feature/amelioration`)
+3. Committez vos changements (`git commit -m 'Ajout fonctionnalité'`)
+4. Pushez vers la branche (`git push origin feature/amelioration`)
+5. Ouvrez une Pull Request
+
+## 📝 TODO / Améliorations Futures
+
+- [ ] Sauvegarder les villes favorites (localStorage)
+- [ ] Ajouter graphiques Chart.js
+- [ ] Mode sombre/clair manuel
+- [ ] Support multi-langues
+- [ ] PWA (Progressive Web App)
+- [ ] Notifications météo
+- [ ] Partage sur réseaux sociaux
+- [ ] Historique des recherches
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+## 👨‍💻 Auteur
+
+**Anthony - Infor'Barget**
+
+- 🌐 Site web : [inforbarget.fr](https://inforbarget.fr)
+- 📺 YouTube : [Infor'Barget](https://youtube.com/@inforbarget)
+- 💼 LinkedIn : [Votre LinkedIn](https://linkedin.com/in/votre-profil)
+- 📧 Email : admin@inforbarget.com
+
+## 🙏 Remerciements
+
+- OpenWeatherMap pour l'API gratuite
+- Font Awesome pour les icônes
+- La communauté dev pour l'inspiration
+
+## ⭐ Support
+
+Si ce projet vous a aidé, n'hésitez pas à :
+- ⭐ Mettre une étoile au repository
+- 🐛 Signaler des bugs via les Issues
+- 💡 Proposer des améliorations
+- 📺 S'abonner à la chaîne YouTube
+- 🔗 Partager le projet
+
+---
+
+**Fait avec ❤️ par Infor'Barget - Formation & Développement Web**
+
+#JavaScript #CSS #HTML #WeatherApp #Tutorial #WebDevelopment
+```
+
+---
+
+## 🏷️ TOPICS GITHUB À AJOUTER
+```
+weather-app
+css-animations
+javascript
+html-css-js
+glassmorphism
+openweathermap
+vanilla-javascript
+web-development
+frontend
+tutorial
+beginner-friendly
+responsive-design
+api-integration
+particles-animation
+weather-forecast
