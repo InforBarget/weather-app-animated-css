@@ -204,5 +204,3 @@ Si ce projet vous a aidé, n'hésitez pas à :
 **Fait avec ❤️ par Infor'Barget - Formation & Développement Web**
 
 #JavaScript #CSS #HTML #WeatherApp #Tutorial #WebDevelopment
-```
-
