@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo Animée</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Conteneur des animations de fond -->
+    <div class="background-animation">
+        <div class="clouds-container"></div>
+        <div class="particles-container"></div>
+        <div class="stars-container"></div>
+    </div>
+
+    <!-- Conteneur principal -->
+    <div class="container">
+        <!-- En-tête avec recherche -->
+        <header class="header">
+            <h1 class="title">
+                <i class="fas fa-cloud-sun"></i>
+                Météo Animée
+            </h1>
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="cityInput" 
+                    placeholder="Rechercher une ville..."
+                    autocomplete="off"
+                >
+                <button id="searchBtn" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button id="locationBtn" class="search-btn">
+                    <i class="fas fa-location-dot"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Carte météo principale -->
+        <main class="weather-card">
+            <!-- Informations actuelles -->
+            <div class="current-weather">
+                <div class="city-name" id="cityName">Recherchez une ville...</div>
+                <div class="date" id="currentDate"></div>
+                
+                <div class="weather-icon-container">
+                    <i class="weather-icon fas fa-cloud" id="weatherIcon"></i>
+                    <div class="temperature" id="temperature">--°</div>
+                </div>
+                
+                <div class="weather-description" id="description">--</div>
+                
+                <div class="feels-like" id="feelsLike">
+                    Ressenti : --°
+                </div>
+            </div>
+
+            <!-- Détails supplémentaires -->
+            <div class="weather-details">
+                <div class="detail-card">
+                    <i class="fas fa-wind"></i>
+                    <div class="detail-label">Vent</div>
+                    <div class="detail-value" id="windSpeed">-- km/h</div>
+                </div>
+                
+                <div class="detail-card">
+                    <i class="fas fa-tint"></i>
+                    <div class="detail-label">Humidité</div>
+                    <div class="detail-value" id="humidity">--%</div>
+                </div>
+                
+                <div class="detail-card">
+                    <i class="fas fa-gauge"></i>
+                    <div class="detail-label">Pression</div>
+                    <div class="detail-value" id="pressure">-- hPa</div>
+                </div>
+                
+                <div class="detail-card">
+                    <i class="fas fa-eye"></i>
+                    <div class="detail-label">Visibilité</div>
+                    <div class="detail-value" id="visibility">-- km</div>
+                </div>
+
+                <div class="detail-card">
+                    <i class="fas fa-cloud"></i>
+                    <div class="detail-label">Couverture</div>
+                    <div class="detail-value" id="clouds">--%</div>
+                </div>
+
+                <div class="detail-card">
+                    <i class="fas fa-temperature-high"></i>
+                    <div class="detail-label">Min / Max</div>
+                    <div class="detail-value" id="minMax">--° / --°</div>
+                </div>
+            </div>
+
+            <!-- Prévisions 5 jours -->
+            <div class="forecast-container">
+                <h2 class="forecast-title">Prévisions sur 5 jours</h2>
+                <div class="forecast-grid" id="forecastGrid">
+                    <!-- Les prévisions seront générées ici -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Message d'erreur -->
+        <div class="error-message" id="errorMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
