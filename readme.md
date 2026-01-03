@@ -6,8 +6,6 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![YouTube](https://img.shields.io/badge/YouTube-Tutorial-red)](https://youtube.com/votre-video)
 
-![Preview](screenshots/preview.gif)
-
 ## ✨ Fonctionnalités
 
 - 🌡️ Météo en temps réel via OpenWeatherMap API
@@ -21,27 +19,9 @@
 
 ## 🎥 Tutoriel Vidéo
 
-[![Tutoriel YouTube](thumbnail.jpg)](https://youtube.com/votre-video)
+[![Tutoriel YouTube](thumbnail.jpg)](https://youtu.be/d34krm-7KhA)
 
-**Regardez le tutoriel complet sur YouTube** : [Application Météo avec Animations CSS](https://youtube.com/votre-video)
-
-## 🚀 Demo Live
-
-👉 [Voir la démo en ligne](https://votre-username.github.io/weather-app-animated-css/)
-
-## 📸 Captures d'écran
-
-### Vue Ensoleillée
-![Sunny](screenshots/sunny.png)
-
-### Vue Pluvieuse
-![Rainy](screenshots/rainy.png)
-
-### Vue Enneigée
-![Snowy](screenshots/snowy.png)
-
-### Vue Nocturne
-![Night](screenshots/night.png)
+**Regardez le tutoriel complet sur YouTube** : [Application Météo avec Animations CSS]([[https://youtube.com/votre-video](https://youtu.be/d34krm-7KhA)])
 
 ## 🛠️ Technologies Utilisées
 
@@ -62,7 +42,7 @@
 
 1. **Cloner le repository**
 ```bash
-git clone https://github.com/votre-username/weather-app-animated-css.git
+git clone [https://github.com/votre-username/weather-app-animated-css.git](https://github.com/InforBarget/weather-app-animated-css.git )
 cd weather-app-animated-css
 ```
 
@@ -101,16 +81,7 @@ weather-app-animated-css/
 ├── script.js           # Logique JavaScript
 ├── README.md           # Documentation
 ├── LICENSE             # Licence MIT
-│
-├── screenshots/        # Captures d'écran
-│   ├── preview.gif
-│   ├── sunny.png
-│   ├── rainy.png
-│   ├── snowy.png
-│   └── night.png
-│
-└── docs/              # Documentation supplémentaire
-    └── API_GUIDE.md
+
 ```
 
 ## 🎨 Fonctionnalités CSS
@@ -209,9 +180,8 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 **Anthony - Infor'Barget**
 
-- 🌐 Site web : [inforbarget.fr](https://inforbarget.fr)
+- 🌐 Site web : [inforbarget.com](https://inforbarget.com)
 - 📺 YouTube : [Infor'Barget](https://youtube.com/@inforbarget)
-- 💼 LinkedIn : [Votre LinkedIn](https://linkedin.com/in/votre-profil)
 - 📧 Email : admin@inforbarget.com
 
 ## 🙏 Remerciements
@@ -236,22 +206,3 @@ Si ce projet vous a aidé, n'hésitez pas à :
 #JavaScript #CSS #HTML #WeatherApp #Tutorial #WebDevelopment
 ```
 
----
-
-## 🏷️ TOPICS GITHUB À AJOUTER
-```
-weather-app
-css-animations
-javascript
-html-css-js
-glassmorphism
-openweathermap
-vanilla-javascript
-web-development
-frontend
-tutorial
-beginner-friendly
-responsive-design
-api-integration
-particles-animation
-weather-forecast
